@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Registration.UserRegistration">
+
+
+
+
+        <!--Header text-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:layout_marginHorizontal="60dp"
+            android:text="SiGn UP Now"
+            android:gravity="center"
+            android:textColor="#520185"
+            android:textStyle="italic|bold"
+            tools:ignore="HardcodedText"
+            />
+
+        <!--Parent name-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Name"
+            app:endIconMode="clear_text"
+            tools:ignore="HardcodedText"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_gravity="center"
+            android:padding="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:shadowRadius="@integer/material_motion_duration_long_2"
+                android:id="@+id/SginUpUser"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Email -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            tools:ignore="HardcodedText"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_gravity="center"
+            android:padding="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:shadowRadius="@integer/material_motion_duration_long_2"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:id="@+id/SginUpEmail"
+                android:textStyle="italic"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Password-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:elevation="10dp"
+            tools:ignore="HardcodedText"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_gravity="center"
+            app:endIconMode="password_toggle"
+            android:padding="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:shadowRadius="@integer/material_motion_duration_long_2"
+                android:id="@+id/SignUPPassword"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--For Gender-->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/userradiogroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parent"
+                android:layout_marginStart="35dp"
+                android:id="@+id/doc_radio"
+                tools:ignore="HardcodedText" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor"
+                android:layout_marginStart="40dp"
+                android:id="@+id/parent_radio"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+
+        <!--Button -->
+        <Button
+            android:id="@+id/Signupapply"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="-20dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <!--Image for left corner bottom best practiced-->
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:id="@+id/Forexp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="-10dp"
+            android:layout_gravity="start"
+            android:src="@drawable/parentpic"
+            />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

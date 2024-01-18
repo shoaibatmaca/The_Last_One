@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/loginheader"
+    tools:context=".UserUI.Login">
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/loginheaderpic"
+        android:layout_marginTop="40dp"
+        tools:ignore="ContentDescription" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/header"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Hi! Welcome back"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        tools:ignore="HardcodedText" />
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_marginTop="25dp"
+    app:endIconMode="clear_text"
+    android:layout_marginHorizontal="20dp"
+    android:hint="Email"
+    app:helperTextEnabled="false"
+    app:helperText="Required*"
+    app:helperTextTextColor="@color/black"
+    tools:ignore="HardcodedText">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_person">
+
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_marginTop="10dp"
+    app:endIconMode="clear_text"
+    android:layout_marginHorizontal="20dp"
+    android:hint="Password"
+    app:helperTextEnabled="false"
+    app:helperText="Required*"
+    app:helperTextTextColor="@color/black"
+    tools:ignore="HardcodedText">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_lock">
+
+    </com.google.android.material.textfield.TextInputEditText>
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loginbtn"
+    android:layout_marginHorizontal="20dp"
+    android:text="Login"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    tools:ignore="HardcodedText" />
+
+<!--    android:background="@drawable/custom_edittext"-->
+
+
+<!--    This is for other Authentications:-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:orientation="horizontal">-->
+
+
+<!--        <View-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@color/gray"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Or Sign in with"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textColor="@color/gray"-->
+<!--            tools:ignore="HardcodedText" />-->
+<!--        <View-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@color/gray"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_weight=".5"-->
+<!--            android:src="@drawable/googleicon"-->
+<!--            />-->
+<!-- <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--           android:layout_weight=".5"-->
+<!--            android:src="@drawable/facebookcin"-->
+<!--            android:layout_gravity="center"/>-->
+
+
+
+<!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="16sp"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            tools:ignore="HardcodedText" />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:gravity="start"
+            android:id="@+id/createAccount"
+            android:textStyle="bold|italic"
+            android:fontFamily="monospace"
+            android:textSize="17sp"
+            android:textColor="#520185"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

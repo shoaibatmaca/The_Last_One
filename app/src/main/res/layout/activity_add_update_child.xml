@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserUI.AddUpdateChild">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Header-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Child Info"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/childname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/ChildrenAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Age"
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!--  DOB  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/childdbtxt"
+                    android:layout_weight=".7"
+                    android:textSize="15sp"
+                    android:text="Date of Birth:"
+                    android:layout_marginHorizontal="40dp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".3"
+                    android:id="@+id/ChilDbPickr"
+                    android:src="@drawable/dob" />
+            </LinearLayout>
+
+            <!--    Gender-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/childradiogroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layout_marginStart="35dp"
+                    android:id="@+id/maleradio" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FeMale"
+                    android:layout_marginStart="40dp"
+                    android:id="@+id/femaleradio" />
+            </RadioGroup>
+
+            <!-- For Vaccinations -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:text="Availabe Vaccine:"
+                    android:layout_marginStart="20dp" />
+
+                <Spinner
+                    android:id="@+id/ChildVacinations"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ChildHos"
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Location/Hospital"
+                tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChildAdd"
+                android:layout_margin="20dp"
+                android:text="Submit"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                tools:ignore="HardcodedText" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChildUpdate"
+                android:layout_marginHorizontal="60dp"
+                android:layout_margin="20dp"
+                android:text="Update"
+                android:textStyle="italic|bold"
+                android:padding="7dp"
+                android:textColor="#520185"
+                tools:ignore="HardcodedText"
+                android:elevation="60dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:background="@drawable/custom_edittext"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

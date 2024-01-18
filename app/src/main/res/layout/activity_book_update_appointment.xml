@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserUI.BookUpdateAppointment">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="@drawable/wave"
+/>
+
+
+
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:id="@+id/doctorlist"
+    android:layout_marginTop="10dp"
+    />
+
+
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Book Appointment"-->
+<!--        tools:ignore="HardcodedText"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        android:textSize="25sp"-->
+<!--        />-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:id="@+id/ChildBookTimetxt"-->
+<!--            android:layout_weight=".7"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="appointment on: "-->
+<!--            tools:ignore="HardcodedText"-->
+<!--            android:layout_marginHorizontal="40dp"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_weight=".3"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:id="@+id/childbp"-->
+<!--            android:src="@drawable/dob"-->
+<!--            tools:ignore="ContentDescription" />-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:id="@+id/childTime"-->
+<!--            android:layout_weight=".5"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="appointment Time: "-->
+<!--            tools:ignore="HardcodedText"-->
+<!--            android:layout_marginHorizontal="40dp"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_weight=".3"-->
+<!--            android:id="@+id/childBtime"-->
+<!--            android:src="@drawable/clocktime"-->
+<!--            tools:ignore="ContentDescription" />-->
+<!--    </LinearLayout>-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/childname"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="40dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:hint="Child Name"-->
+<!--        tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck" />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/childdoctorname"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="40dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:hint="Doctor Name (optional)"-->
+<!--        tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck" />-->
+
+
+
+<!--    <Button-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/childBookAp"-->
+<!--        android:text="Book"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="italic|bold"-->
+<!--        android:layout_marginHorizontal="60dp"-->
+<!--        tools:ignore="HardcodedText" />-->
+
+
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/bppic"/>-->
+
+
+
+
+</LinearLayout>

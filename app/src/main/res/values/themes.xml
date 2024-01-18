@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TheLastOne" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/white</item>-->
+
+<!--        <item name="colorSecondary">@color/gray</item>-->
+
+
+
+    </style>
+
+    <style name="Theme.TheLastOne" parent="Base.Theme.TheLastOne" />
+
+    <style name="Base.TextAppearance.AppCompat.Button." parent="Base.Theme.TheLastOne">
+
+    </style>
+
+
+
+</resources>
